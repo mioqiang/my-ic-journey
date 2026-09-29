@@ -1,0 +1,83 @@
+# ---- IC / EDA 工具与流程产物（体积大、可重新生成，绝对不要提交）----
+OpenROAD-flow-scripts/
+OpenLane/
+open_pdks/
+skywater-pdk/
+chip-tutorials/
+*.gds
+*.gdsii
+*.oas
+*.def
+*.lef
+*.lib
+*.db
+*.spef
+*.vcd
+*.fst
+*.lxt2
+
+# 编译产物
+*.o
+*.obj
+*.exe
+*.out
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.d
+a.out
+
+# 综合 / 仿真中间文件
+*.vvp
+*.synth.v
+*.netlist.v
+build/
+runs/
+results/
+# 注意：不要写 reports/ —— 那会把 backend/reports/ 一起排除掉，
+# 而 W17 要求各阶段报告必须提交进仓库。ORFS 自己的报告在 OpenROAD-flow-scripts/ 下，已被上面排除。
+
+# STM32 / Keil / CubeMX
+*.uvguix.*
+*.uvoptx
+*.scvd
+MDK-ARM/*/Objects/
+MDK-ARM/*/Listings/
+Debug/
+Release/
+*.ioc.bak
+
+# PCB / 仿真
+*.dsn.bak
+*.bak
+*.sch-bak
+*.brd-bak
+
+# 编辑器与系统
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时与日志
+*.log
+*.tmp
+*.temp
+log.txt
+
+# 密钥（务必不要提交！）
+*.pem
+*.key
+.env
+id_rsa
+id_ed25519
+
+# 电化学原始实验数据（体积大，需要时另行处理）
+*.mpr
+*.mpt
+*.bin.dat
